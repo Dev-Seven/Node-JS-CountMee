@@ -1,0 +1,25 @@
+const router = require('express').Router()
+const organizationController = require('../controllers/organization.controller')
+const validator = require('../validators/organization.validator')
+const { setLanguage , isUserAuthenticated } = require('../middleware/auth.middleware')
+const  { upload }  = require('../middleware/upload.middleware')
+
+// router.post("/organization/createOrganization", isUserAuthenticated, upload.array('logo'), validator.createOrganization, setLanguage, organizationController.createOrganization)
+router.post("/organization/createOrganization", isUserAuthenticated, upload.array('logo'), validator.createOrganization, setLanguage, organizationController.createOrganization)
+router.post("/organization/editOrganization", isUserAuthenticated, upload.array('logo'), validator.editOrganization, organizationController.editOrganization)
+router.post("/organization/editUserOrganization", isUserAuthenticated, upload.array('logo'), validator.editUserOrganization, organizationController.editUserOrganization)
+router.post('/organization/organizationDetail', isUserAuthenticated, validator.organizationDetail, setLanguage, organizationController.organizationDetail)
+router.post('/organization/userOrganizationDetail', isUserAuthenticated, validator.userOrganizationDetail, setLanguage, organizationController.userOrganizationDetail)
+router.post('/organization/allOrganization', isUserAuthenticated, setLanguage, organizationController.allOrganization)
+router.post('/organization/allUserOrganization', isUserAuthenticated, setLanguage, organizationController.allUserOrganization)
+router.post('/organization/activeOrganization', isUserAuthenticated, validator.activeOrganization, setLanguage, organizationController.activeOrganization)
+router.post('/organization/declineOrganization', isUserAuthenticated, validator.declineOrganization, setLanguage, organizationController.declineOrganization)
+router.post('/organization/deactivateOrganization', isUserAuthenticated, validator.deactivateOrganization, setLanguage, organizationController.deactivateOrganization)
+router.post('/organization/approveOrganization', isUserAuthenticated, validator.approveOrganization, setLanguage, organizationController.approveOrganization)
+router.post('/organization/orgLogo', isUserAuthenticated, setLanguage, organizationController.orgLogo)
+router.post('/organization/allDeletedOrganization', isUserAuthenticated, setLanguage, organizationController.allDeletedOrganization)
+router.post('/organization/deleteOrganization', isUserAuthenticated, validator.deleteOrganization, setLanguage, organizationController.deleteOrganization)
+router.post('/organization/organizationHdBySa', isUserAuthenticated, validator.organizationHdBySa, setLanguage, organizationController.organizationHdBySa)
+
+
+module.exports = router;

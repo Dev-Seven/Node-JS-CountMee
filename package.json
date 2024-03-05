@@ -1,0 +1,50 @@
+{
+  "name": "epitome-voe",
+  "version": "1.0.0",
+  "description": "virtual online election",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://oauth2:glpat-zzniCxpkUy85QDgsF8jj@gitlab.com/devsevensquare/epitome-voe.git"
+  },
+  "author": "nikhil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/devsevensquare/epitome-voe/issues"
+  },
+  "homepage": "https://gitlab.com/devsevensquare/epitome-voe#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "accesscontrol": "^2.2.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "fast-csv": "^4.3.6",
+    "fcm-notification": "^2.0.0",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.2",
+    "multer": "^1.4.4",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.7.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "socket.io": "^4.5.1",
+    "swagger-ui-express": "^4.3.0",
+    "winston": "^3.8.1",
+    "ws": "^8.11.0"
+  }
+}

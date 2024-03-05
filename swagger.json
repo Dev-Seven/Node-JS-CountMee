@@ -1,0 +1,127 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "VOE API's Description",
+    "version": "1.0.0",
+    "title": "VOE"
+  },
+  "externalDocs": {
+    "description": "Find out more",
+    "url": "https://voe.com/"
+    },
+  "host": "127.0.0.1:3000/api/v1",
+  "basePath": "/auth",
+  "tag": {
+    "name": "user"},
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/sign-up": {
+      "post": {
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "description": "This is for new user registration.",
+        "operationId": "createrRecord",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Created user Record",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "description": "This can only be done by the logged in user.",
+        "operationId": "createLogin",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Created user object",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/getRecord": {
+      "post": {
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "description": "This can only be done by the logged in user.",
+        "operationId": "getRecord",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "definitions": {
+      "User": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string" },
+          "firstName": {
+            "type": "string"},
+          "lastName": {
+            "type": "string"},
+          "email": {
+            "type": "string"},
+          "password": {
+            "type": "string"},
+          "userStatus":{
+            "type": "integer",
+            "format": "int32",
+            "description": "User Status"},
+        "xml": {
+          "name": "User"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{"level":"warn","message":"Event has been hard deleted by 62a30778d138f2c221708809 at","timestamp":"2022-08-02 17:43:58"}
+{"level":"warn","message":"Organization has been hard deleted by 62a30778d138f2c221708809 at","timestamp":"2022-08-02 17:47:04"}{"level":"warn","message":"Org 10J has been hard deleted by superAdmin at","timestamp":"2022-08-03 14:21:02"}
+{"level":"warn","message":"Org 10J has been hard deleted by superAdmin at","timestamp":"2022-08-03 14:22:14"}
+{"level":"warn","message":"Eve5J-31S 20:27$ddddddddddddddd has been hard deleted by superAdmin at","timestamp":"2022-08-03 14:46:48"}
+{"level":"warn","message":"Eve5J-31S 20:27$ddddddddddddddd has been deleted by 62a3082d7276dd6d3349fa57 at","timestamp":"2022-08-03 14:56:28"}
+{"level":"warn","message":"Speaker (Spe14JL) has been deleted by 6246f306d5917398a5dc7a55 at","timestamp":"2022-08-03 15:03:05"}
+{"level":"warn","message":"Sponsor (Spon21JL) has been deleted by 6246f306d5917398a5dc7a55 at","timestamp":"2022-08-03 15:05:43"}
+{"level":"warn","message":"Event Feed (62d8efce95dfd29924c7c045) has been deleted by 6246f306d5917398a5dc7a55 at","timestamp":"2022-08-03 16:18:54"}
+{"level":"warn","message":"Event (Eve22-30J$$) has been deleted by 62a3082d7276dd6d3349fa57 at","timestamp":"2022-08-03 16:21:44"}
+{"level":"error","message":"You are passing wrong organizationId at","timestamp":"2022-08-03 16:37:58"}
+{"level":"warn","message":"Organization (Org 10J) and rest all data belongs to this organization has been hard deleted by 624ac82a712c65e55bd0f7da at","timestamp":"2022-08-03 16:39:38"}
