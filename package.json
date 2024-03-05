@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://oauth2:glpat-zzniCxpkUy85QDgsF8jj@gitlab.com/devsevensquare/epitome-voe.git"
+    "url": "*"
   },
   "author": "nikhil",
   "license": "ISC",
